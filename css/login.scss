@@ -1,0 +1,156 @@
+$primary-blue: #1E73FD;
+$text-grey : #9E9E9E;
+$light-grey : #E0E0E0;
+$dark-grey : #424242;
+
+.left-part{
+	position : absolute;
+	width : 50%;
+	height: 100%;
+	/**background-color: $primary-blue;**/
+	background : url(../img/3.jpg) no-repeat center center;
+}
+
+
+.welcome-text{
+	font-family : "Raleway", sans-serif;
+	font-size: 50px;
+	color: #fff;
+	font-weight: 900;
+	animation-duration: 1.2s;
+	animation-delay: 0.5s;
+	position :absolute;
+	top : 50px;
+	text-align : left;
+}
+
+.welcome-descp{
+	position : absolute;
+	top : 100px;
+	font-family : 'Open Sans', sans-serif;
+	font-weight : 300;
+	font-size : 16px;
+	color : #fff;
+	opacity : 0.9;
+	text-align : left;
+	line-height: 1.4;
+}
+
+.left-part-container{
+	position : absolute;
+	top: 30%;
+	left : 28px;
+	width : 100%;
+}
+
+.right-part{
+	@extend .left-part;
+	background: none;
+	right :0px;
+}
+.signIn-btn-container{
+	display: inline-block;
+	float: left;
+	width: 50%;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: none;
+	border: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 24px;
+	color: $dark-grey;
+	opacity: 0.75;
+}
+.signIn-btn{
+	width: 100%;
+	height: 100%;
+}
+.signUp-btn-container{
+	@extend .signIn-btn-container;
+	float: right;
+}
+
+.signUp-btn{
+	@extend .signIn-btn;
+}
+
+.active{
+	background: #fff;
+}
+.non-active{
+	background: $light-grey;
+	opacity: 0.70;
+}
+.text-field-container{
+	text-align: center;
+}
+
+#email-field{
+	margin-top: 20%;
+}
+.lets-go-btn-div{
+	height: 36px;
+	width: 130px;
+	border: $primary-blue solid 1px;
+	border-radius: 25px;
+	text-align: center;
+}
+.lets-go-btn{
+	font-family: 'Open Sans',sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: $primary-blue;
+	background: none;
+	border: none;
+	height: 100%;
+	width: 100%;
+	border-radius: 25px;
+}
+
+.lets-go-btn-container{
+	margin-left: 40%;
+	margin-top: 50px;
+}
+
+.lets-go-btn-div:hover {
+	background-color: $primary-blue;
+}
+
+.lets-go-btn:hover{
+	color: #fff;
+}
+
+.forgot-password{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: $text-grey;
+	font-weight: 300;
+	margin-left: 28%;
+}
+.forgot-password > a{
+	text-decoration : none;
+	color: $text-grey;
+	opacity: 0.75;
+}
+.forgot-password > a:hover{
+	color: $primary-blue;
+}
+
+.signIn-container {
+	animation-duration: 1.2s;
+	animation-delay: 0.5s;
+}
+
+
+/**Sign Up**/
+
+.signUp-container{
+	display : none;
+	animation-duration: 0.5s;
+}
+
+#name-field{
+	@extend #email-field;
+}

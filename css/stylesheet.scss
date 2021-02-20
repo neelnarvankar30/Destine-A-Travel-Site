@@ -1,0 +1,284 @@
+$text-grey : #9E9E9E;
+$light-grey : #F5F5F5;
+$blue : rgba(30,115,253,0.2);
+
+/**Animation Container**/
+#animation-container{
+	text-align: center;
+	animation-duration: 1s;
+
+}
+
+#welcome-text{
+	font-family : "Raleway", sans-serif;
+	font-size: 50px;
+	color: $text-grey;
+	font-weight: 900;
+	animation-duration: 1.2s;
+	animation-delay: 0.5s;
+}
+
+#places-text, #countries-text, #travel-text, #love-text{
+	@extend #welcome-text;
+	display: none;
+}
+
+.credits-text{
+	font-size: 16px;
+	display : absolute;
+	left : 20%;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	color: $text-grey;
+}
+
+#main-container{
+	animation-duration: 2s;
+	animation-delay: 0.5s;
+	display: none;
+	padding : 0%;
+}
+
+.menu-icon{
+	max-height: 20px;
+	opacity: 0.9;
+	/*margin : auto auto;*/
+}
+
+.menu-btn{
+	background : none;
+	padding: 0px;
+	border : none;
+
+}
+.menu-btn-container{
+	border : 2px solid $text-grey;
+	border-radius : 50px;
+	height: 45px;
+	width: 45px;
+	padding: 8px;
+	vertical-align : center;
+	text-align: center;
+	
+}
+
+.menu-content{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+	padding: 0%;
+}
+#menu-container{
+	display: none;
+	z-index : 100;
+}
+.menu-cross-btn-container{
+	@extend .menu-btn-container;
+	border : 2px solid #fff;
+	opacity: 0.6;
+	float : right;
+}
+
+.container-fluid body{
+	padding: 0%;
+}
+
+/**Mouse Animation**/
+
+.scroll-downs{
+	position : absolute;
+	margin: auto;
+	width: 24px;
+	height: 55px;
+	bottom: 50px;
+	right : 50%;
+}
+
+.mouse{
+	width : 3px;
+	height: 45px;
+	padding: 8px 12px;
+	border : 2px solid $text-grey;
+	border-radius: 20px;
+	opacity : 0.75;
+}
+
+.scroller{
+	width : 3px;
+	height: 8px;
+	border-radius: 25%;
+	background-color : $text-grey;
+	animation-name: scroll;
+	animation-duration: 2.2s;
+	animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+	animation-iteration-count: infinite;
+}
+
+@keyframes scroll{
+	0%{
+		opacity:0;
+	}
+	10%{
+		transform : translateY(0); opacity:1;
+	}
+	100%{
+		transform : translateY(10px); opacity:0;
+	}
+
+}
+
+.intro-base{
+	@extend #welcome-text;
+	letter-spacing: 20px;
+	margin-left: 18%;
+	font-size: 200px;
+	opacity: 0.1;
+	color : $blue;
+	-webkit-animation-duration : 5s;
+	-webkit-animation-delay: 3s;
+}
+
+.intro-descp{
+	font-size: 36px;
+	font-family : 'Open Sans', sans-serif;
+	color : $text-grey;
+	position: absolute;
+	left: 37%;
+	top: 40%;
+	text-align: center;
+	opacity: 1;
+	font-weight : 300;
+	/*-webkit-animation-duration : 0.5s;*/
+}
+.scroll-down-text{
+	bottom : 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size : 14px;
+	left : 47%;
+	position : absolute;
+	color: $text-grey;
+	
+}
+
+/**Place Content**/
+
+#section2{
+	background : url(../img/place/9_1.jpg) no-repeat center center;
+	background-size : cover;
+}
+#section3{
+	background : url(../img/place/19.jpg) no-repeat center center;
+	background-size : cover;
+}
+#section4{
+	background : url(../img/place/10.jpg) no-repeat center center;
+	background-size : cover;
+}
+#section5{
+	background : url(../img/place/7.jpg) no-repeat center center;
+	background-size : cover;
+}
+#section6{
+	background : url(../img/place/25.jpg) no-repeat center center;
+	background-size : cover;
+}
+#section7{
+	background : url(../img/place/26.jpg) no-repeat center center;
+	background-size : cover;
+}
+#section8{
+	background : url(../img/place/12.jpg) no-repeat center center;
+	background-size : cover;
+}
+#section9{
+	background : url(../img/place/17.jpg) no-repeat center center;
+	background-size : cover;
+}
+#section10{
+	background : url(../img/place/24.jpg) no-repeat center center;
+	background-size : cover;
+}
+#section11{
+	background : url(../img/place/21.jpg) no-repeat center center;
+	background-size : cover;
+}
+#section12{
+	background : url(../img/place/16.jpg) no-repeat center center;
+	background-size : cover;
+}
+#section13{
+	background : url(../img/place/15.jpg) no-repeat center center;
+	background-size : cover;
+}
+#section14{
+	background : url(../img/place/20_3.jpg) no-repeat center center;
+	background-size : cover;
+}
+#section15{
+	background : url(../img/place/3.jpg) no-repeat center center;
+	background-size : cover;
+}
+#section16{
+	background : url(../img/place/28.jpg) no-repeat center center;
+	background-size : cover;
+}
+
+
+.mini-logo{
+	@extend #welcome-text;
+	font-size: 28px;
+	color: #fff;
+	display: inline;
+	float: left;
+	position : absolute;
+	top: 5px;
+	left : 35px;
+}
+
+.place-number{
+	position: absolute;
+	left: 48%;
+	font-size: 20px;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	top : 5px;
+	z-index: 999;
+}
+.place-number-active{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 36px;
+}
+
+.place-name-container{
+	position: absolute;
+	bottom: 35px;
+	left : 35px;
+	color : #fff;
+}
+
+.place-name-place{
+	font-size: 22px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+.place-name-heading{
+	font-size: 48px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;	
+}
+
+.like-btn{
+	background : url(../assets/heart_border.png) no-repeat center center;
+	background-size : cover;
+	border: none;
+	position : absolute;
+	height : 35px;
+	width: 35px;
+	right: 35px;
+	bottom: 35px;
+}

@@ -1,0 +1,23 @@
+.spinner{
+	width: 60px;
+	height: 60px;
+	margin: 75px auto;
+	background-color: #9E9E9E;
+
+	border-radius: 100%;
+	animation: circle-animation 1.5s infinite ease-in-out;
+
+}
+
+#animation-container{
+	margin-top: 225px;
+}
+
+@keyframes circle-animation{
+	0%{
+		transform: scale(0);
+	}100%{
+		transform: scale(1.0);
+		opacity: 0;
+	}
+}

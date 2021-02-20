@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Destine - Login</title>
+
+	<meta name="description" content="Collection of Most Beautiful Places on Earth" />
+	<meta name="keywords"  content="beautiful places,earth,collection" />
+	<meta name="Resource-type" content="Document" />
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+    <script type="text/javascript" src="js/login.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Raleway:900" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css" />
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body>
+<div class="login-contanier">
+	<div class="left-part">
+		<div class="left-part-container">
+			<div class="welcome-text"><span>Welcome Back!</span></div>
+			<div class="welcome-descp"><span>When you login to Destine, you can bookmark your favourite Destinations.</span></div>
+		</div>
+	</div><!--/.left-part-->
+	<div class="right-part">
+		<div >
+			<form action="#">
+				<div class="btn-container">
+					<button class="signIn-btn-container active " onclick="signIn_btn()"><div class="signIn-btn">Sign In</div></button>
+					<button class="signUp-btn-container non-active " onclick="signUp_btn()"><div class="signUp-btn">Sign Up</div></button>
+				</div>
+				<div id="signIn-container" class="signIn-container ">
+				<div class="text-field-container">
+					<!--Email-->
+			        <div id="email-field" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			          <input  name = "email" class="mdl-textfield__input" type="email" id="sample3">
+			          <label class="mdl-textfield__label" for="sample3">Email</label>
+			          <span class="mdl-textfield__error">Enter a correct Email</span>
+			        </div>
+			        <br/>
+			        <br/>
+			        <!--Password-->
+			        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			          <input name="pass" pattern=".{8,}" class="mdl-textfield__input" type="password" id="sample3">
+			          <label class="mdl-textfield__label" for="sample3">Password</label>
+			          <span class="mdl-textfield__error">Minimum 8 characters</span>
+			        </div>
+				</div>
+				<div class="forgot-password"><a href="#">Forgot Password?</a></div>
+				<div class="lets-go-btn-container">
+					<div class="lets-go-btn-div">
+						<button class="lets-go-btn">Let's Go!</button>
+					</div>
+				</div>
+				</div>
+
+				<!--signUp-container-->
+				<div id="signUp-container" class="signUp-container ">
+				<div class="text-field-container">
+					<!--Name-->
+					<div id="name-field" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			          <input name="Name" class="mdl-textfield__input" type="text" id="sample3">
+			          <label class="mdl-textfield__label" for="sample3">Name</label>
+			          </div>
+			          <br/>
+			          <br/>
+					<!--Email-->
+			        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			          <input name="email" class="mdl-textfield__input" type="email" id="sample3">
+			          <label class="mdl-textfield__label" for="sample3">Email</label>
+			          <span class="mdl-textfield__error">Enter a correct Email</span>
+			        </div>
+			        <br/>
+			        <br/>
+			        <!--Password-->
+			        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			          <input name="pass" pattern=".{8,}" class="mdl-textfield__input" type="password" id="sample3">
+			          <label class="mdl-textfield__label" for="sample3">Password</label>
+			          <span class="mdl-textfield__error">Minimum 8 characters</span>
+			        </div>
+				</div>
+				<div class="lets-go-btn-container">
+					<div class="lets-go-btn-div">
+						<button class="lets-go-btn">Let's Go!</button>
+					</div>
+				</div>
+				</div>
+				<!--/.signUp-container-->
+
+			</form>	
+		</div>	
+	</div><!--/.right-part-->
+</div>
+</body>
+</html>
